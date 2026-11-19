@@ -39,3 +39,6 @@ The site currently uses Google Fonts from a CDN; if you want all assets served l
 ## Team and company content
 - Company information (About, History, Vision, Mission, Core Values, What We Offer, Why Choose Us, Market analysis, contact and social handles) comes from the company profile video.
 - Team photos are in `assets/team/`. K Bon and George photos are `assets/team/k-bon.jpg` and `assets/team/george.jpg`.
+
+## Hero slideshow
+The main photo at the top changes every few seconds. To change the photos, edit the `<img class="slide">` lines inside `hero-slider` in `index.html` (and add one matching `dot-btn` button per photo).

@@ -41,3 +41,20 @@ const lb=document.createElement("div");lb.className="lightbox";lb.innerHTML="<im
 document.querySelectorAll(".gallery-grid img").forEach(img=>img.addEventListener("click",()=>{lb.firstChild.src=img.src;lb.firstChild.alt=img.alt;lb.classList.add("open");}));
 lb.addEventListener("click",()=>lb.classList.remove("open"));
 document.addEventListener("keydown",e=>{if(e.key==="Escape")lb.classList.remove("open");});
+
+(function(){
+  const box=document.getElementById("hero-slider"); if(!box) return;
+  const slides=[...box.querySelectorAll(".slide")], dots=[...box.querySelectorAll(".dot-btn")];
+  let i=0, timer=null;
+  const reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function show(n){i=(n+slides.length)%slides.length;slides.forEach((s,k)=>s.classList.toggle("active",k===i));dots.forEach((d,k)=>d.classList.toggle("active",k===i));}
+  function start(){if(reduce||timer)return;timer=setInterval(()=>show(i+1),4500);}
+  function stop(){clearInterval(timer);timer=null;}
+  dots.forEach((d,k)=>d.addEventListener("click",()=>{show(k);stop();start();}));
+  box.addEventListener("mouseenter",stop);box.addEventListener("mouseleave",start);
+  let x0=null;
+  box.addEventListener("touchstart",e=>{x0=e.touches[0].clientX;},{passive:true});
+  box.addEventListener("touchend",e=>{if(x0===null)return;const dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>40){show(i+(dx<0?1:-1));stop();start();}x0=null;});
+  document.addEventListener("visibilitychange",()=>document.hidden?stop():start());
+  start();
+})();
