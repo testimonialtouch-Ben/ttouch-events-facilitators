@@ -35,3 +35,7 @@ The site currently uses Google Fonts from a CDN; if you want all assets served l
 ## Please confirm before publishing
 - Location (Ruai) and the Google rating (4.9/5 from 30 reviews) are confirmed by the owner
 - Services list: remove anything you do not offer
+
+## Team and company content
+- Company information (About, History, Vision, Mission, Core Values, What We Offer, Why Choose Us, Market analysis, contact and social handles) comes from the company profile video.
+- Team photos are in `assets/team/`. K Bon and George currently show initials; to add their photos, put the files in `assets/team/` and replace the `<div class="avatar">` in `index.html` with `<div class="profile-photo"><img src="assets/team/k-bon.jpg" alt="K Bon"></div>`.
