@@ -115,3 +115,8 @@
 .contact-details,.contact-details span,.contact-details a{overflow-wrap:anywhere;min-width:0}
 html,body{overflow-x:hidden}
 .footer-links{flex-wrap:wrap}
+
+.crew-photo{margin:-36px -36px 24px;overflow:hidden;background:var(--soft)}
+.crew-photo img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 25%;display:block}
+.crew-photo img.george{object-position:60% 30%}
+@media(max-width:520px){.crew-photo{margin:-26px -26px 22px}}

@@ -30,7 +30,7 @@ The site currently uses Google Fonts from a CDN; if you want all assets served l
 ## Added in this version
 - "Get a Quote" form that opens WhatsApp with the visitor's details prefilled (no server needed)
 - 4-step "how it works" section, Facebook link, Open Graph and Google business markup (JSON-LD)
-- Tagline now matches the logo: "Giving you a touch of testifying memories"
+- Tagline now matches the logo: "We create testifying memories"
 
 ## Please confirm before publishing
 - Location (Ruai) and the Google rating (4.9/5 from 30 reviews) are confirmed by the owner
@@ -38,4 +38,4 @@ The site currently uses Google Fonts from a CDN; if you want all assets served l
 
 ## Team and company content
 - Company information (About, History, Vision, Mission, Core Values, What We Offer, Why Choose Us, Market analysis, contact and social handles) comes from the company profile video.
-- Team photos are in `assets/team/`. K Bon and George currently show initials; to add their photos, put the files in `assets/team/` and replace the `<div class="avatar">` in `index.html` with `<div class="profile-photo"><img src="assets/team/k-bon.jpg" alt="K Bon"></div>`.
+- Team photos are in `assets/team/`. K Bon and George photos are `assets/team/k-bon.jpg` and `assets/team/george.jpg`.
