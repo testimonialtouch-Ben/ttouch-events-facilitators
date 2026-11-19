@@ -139,3 +139,13 @@ html,body{overflow-x:hidden}
 .story-end{background:var(--soft);padding:22px 26px;border-left:4px solid var(--wine);color:var(--wine-dark)!important;font-weight:600}
 @media(max-width:900px){.story-grid{grid-template-columns:1fr;gap:30px}.story-head{position:static}}
 @media (prefers-reduced-motion:reduce){.hero-photo .slide{transition:none}}
+
+/* ---- Service cards with descriptions ---- */
+.offer-grid{grid-template-columns:repeat(3,1fr);gap:18px}
+.offer-tile{display:block;padding:30px 28px;border-top:3px solid var(--wine);border-bottom:0;background:#fff}
+.offer-tile:hover{transform:translateY(-4px);box-shadow:0 14px 34px #3000001a}
+.offer-tile i{display:block;width:auto;text-align:left;font-size:30px;margin-bottom:12px}
+.offer-tile h3{font-size:18px;margin:0 0 10px;color:var(--wine-dark)}
+.offer-tile p{margin:0;font-size:14px;line-height:1.65;color:#5a5252}
+@media(max-width:960px){.offer-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.offer-grid{grid-template-columns:1fr}.offer-tile{padding:24px 22px}}
