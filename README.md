@@ -6,8 +6,8 @@ This is a responsive static website starter for the T.touch brand. Both supplied
 - `index.html` — website content and sections
 - `styles.css` — responsive design and burgundy/white brand styling
 - `script.js` — mobile navigation and contact links
-- `assets/ttouch-logo.png` — main T.touch business logo
-- `assets/mc-benah-personal-logo.png` — separate MC Benah personal-brand logo
+- `assets/ttouch-logo-clean.png` — main T.touch business logo
+- `assets/mc-benah-logo.png` — separate MC Benah personal-brand logo
 
 ## Before publishing
 1. The public phone/WhatsApp number is prefilled as `254735285117`.
