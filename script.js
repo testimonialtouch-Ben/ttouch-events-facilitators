@@ -58,3 +58,15 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape")lb.classList.remove(
   document.addEventListener("visibilitychange",()=>document.hidden?stop():start());
   start();
 })();
+
+document.querySelectorAll(".fb-card").forEach(card=>{
+  const btn=card.querySelector(".fb-play"); if(!btn) return;
+  btn.addEventListener("click",()=>{
+    const url=card.dataset.fb, frame=card.querySelector(".fb-frame");
+    const f=document.createElement("iframe");
+    f.src="https://www.facebook.com/plugins/video.php?href="+encodeURIComponent(url)+"&show_text=false&autoplay=true&width=560";
+    f.allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share";
+    f.allowFullscreen=true; f.title="T.touch event video";
+    frame.innerHTML=""; frame.appendChild(f);
+  });
+});

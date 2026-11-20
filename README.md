@@ -42,3 +42,7 @@ The site currently uses Google Fonts from a CDN; if you want all assets served l
 
 ## Hero slideshow
 The main photo at the top changes every few seconds. To change the photos, edit the `<img class="slide">` lines inside `hero-slider` in `index.html` (and add one matching `dot-btn` button per photo).
+
+## Videos
+- `assets/video/highlights.mp4` plays on the page. Facebook videos are the `fb-card` blocks in the `videos` section of `index.html` (change the link in `data-fb` and in the "Open on Facebook" link).
+- Keep files under 25 MB when uploading through the GitHub website.
